@@ -32,13 +32,10 @@ export default function About() {
       {/* Text Content */}
       <div className="max-w-2xl space-y-6 text-center md:text-left">
         <h1 className="text-4xl font-semibold text-white md:text-5xl">
-          About Signedify
+          Our Mission
         </h1>
         <p className="text-base leading-relaxed text-white md:text-lg">
-          Signedify seeks to bridge the gap between those who can only
-          communicate through sign language and others who may struggle to
-          understand it. Featuring real-time translation from video to any
-          desired language, powered using AI and ML technology.
+        Signedify is dedicated to bridging the communication divide between individuals who rely on sign language and those who may find it challenging to understand. Our mission is to alleviate the struggles faced by those who are unable to express themselves, building a more inclusive environment where everyone can share their thoughts and emotions freely. With Signedify, we aim to foster connections that transcend any disabilities impeding their paths.
         </p>
       </div>
 
