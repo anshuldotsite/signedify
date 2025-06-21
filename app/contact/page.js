@@ -56,6 +56,16 @@ export default function Contact() {
                     >
                       {value}
                     </a>
+                  ) : key.toLowerCase() === 'address' ? ( // Use .toLowerCase() for robustness
+                    <a
+                      key={key}
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(value)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-sm leading-6 font-semibold text-blue-500"
+                    >
+                      {value}
+                    </a>
                   ) : (
                     <p
                       key={key}
@@ -66,6 +76,7 @@ export default function Contact() {
                   )
                 )}
               </div>
+
             </div>
           );
         })}
