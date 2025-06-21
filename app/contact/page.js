@@ -1,6 +1,6 @@
 const contacts = [
   {
-    title: 'Say hello',
+    title: 'Say Hello',
     email: 'signedifyinc@gmail.com',
     phone: '+1 (437) 268-4015',
   },
@@ -45,6 +45,7 @@ export default function Contact() {
               <h2 className="text-lg font-semibold leading-7 text-black">
                 {title}
               </h2>
+
               <div className="mt-3 space-y-1">
                 {Object.entries(fields).map(([key, value]) =>
                   key === 'email' ? (
