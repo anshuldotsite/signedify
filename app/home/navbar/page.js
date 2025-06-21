@@ -32,8 +32,8 @@ export default function Navbar() {
       </nav>
 
       <div className="hidden md:block">
-        <button className="rounded bg-white px-4 py-2 text-blue-500">
-          Get The App!
+        <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
+          Try It Here!
         </button>
       </div>
 
@@ -84,8 +84,8 @@ export default function Navbar() {
                 </li>
               ))}
               <li className="flex justify-center items-center">
-                <button className="w-46 rounded-2xl bg-blue-500 opacity-50 p-2 text-white">
-                  Get The App!
+                <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
+                  Try It Here!
                 </button>
               </li>
             </ul>
