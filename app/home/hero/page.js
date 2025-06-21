@@ -44,9 +44,13 @@ export default function Hero() {
                     <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
                         Try It Here!
                     </button>
-                    <button className="rounded-full border-2 border-gray-300 px-8 py-4 text-lg font-semibold text-gray-700 transition-all duration-300 hover:border-blue-500 hover:text-blue-500">
+                    <button
+                    className="rounded-full border-2 border-gray-300 px-8 py-4 text-lg font-semibold text-gray-700 transition-all duration-300 hover:border-blue-500 hover:text-blue-500"
+                    onClick={() => window.open('https://github.com/anshuldotsite/signedify', '_blank', 'noopener,noreferrer')}
+                    >
                         Learn More
                     </button>
+
                 </div>
             </div>
 
