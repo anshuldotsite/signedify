@@ -16,7 +16,7 @@ export default function Navbar() {
         <h1>Signedify</h1>
       </Link>
 
-      <nav className="hidden md:flex">
+      <nav className="md:flex">
         <ul className="flex space-x-4">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -26,7 +26,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <div className="hidden md:block">
+      <div className="md:block">
         <button className="rounded bg-white px-4 py-2 text-blue-500">
           Get The App!
         </button>
