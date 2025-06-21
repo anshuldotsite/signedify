@@ -41,9 +41,6 @@ export default function Hero() {
                     Signedify uses AI to translate American Sign Language into real-time text, making conversations more accessible and inclusive for everyone.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
-                    <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
-                        Try Demo
-                    </button>
                     <button className="rounded-full border-2 border-gray-300 px-8 py-4 text-lg font-semibold text-gray-700 transition-all duration-300 hover:border-blue-500 hover:text-blue-500">
                         Learn More
                     </button>
