@@ -1,8 +1,11 @@
+// app/page.js
+
+import Contact from './contact/page';
+
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to My App</h1>
-      <p>This is the home page.</p>
+      <Contact />
     </div>
   );
 }
