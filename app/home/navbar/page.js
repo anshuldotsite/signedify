@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="flex items-center justify-between bg-white p-4 text-xl text-blue-500">
       <Link href="/" className="flex items-center space-x-2">
         <Image src={Logo} alt="Signedify Logo" width={75} height={75} />
-        <h1 className="transition transform duration: 300 hover:scale-105">Signedify</h1>
+        <h1 className="font-bold transition transform duration-300 hover:scale-105">Signedify</h1>
       </Link>
 
       <nav className="md:flex">
