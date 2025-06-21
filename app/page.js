@@ -1,8 +1,12 @@
+// app/page.tsx
+import Navbar from "./home/navbar/page";
+import Hero from "./home/hero/page";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to My App</h1>
-      <p>This is the home page.</p>
-    </div>
+    <main>
+      <Navbar />
+      <Hero />
+    </main>
   );
 }
