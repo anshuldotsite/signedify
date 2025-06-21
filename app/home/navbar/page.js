@@ -1,26 +1,37 @@
 import Logo from "@/assets/logo.png";
 import Image from "next/image";
+import Link from "next/link";
+
+const navLinks = [
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#contact', label: 'Contact' },
+];
 
 export default function Navbar() {
+  return (
+    <header className="flex items-center justify-between bg-white p-4 text-xl text-blue-500">
+      <Link href="/" className="flex items-center space-x-2">
+        <Image src={Logo} alt="Signedify Logo" width={75} height={75} />
+        <h1>Signedify</h1>
+      </Link>
 
-    return (
-        <div className="flex justify-between items-center p-4 bg-white text-blue-500 text-xl">
-            <div className="flex flex-row items-center justify-center space-x-2">
-            <Image src={Logo} width={75} height={75}></Image>
-            <h1>Signedify</h1>
-            </div>
-      
-            <nav>
-                <ul className="flex space-x-4">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div className="flex space-x-4">
-                <button className="bg-white text-blue-500 px-4 py-2 rounded">Get The App!</button>
-          </div>
+      <nav className="hidden md:flex">
+        <ul className="flex space-x-4">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href}>{link.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div className="hidden md:block">
+        <button className="rounded bg-white px-4 py-2 text-blue-500">
+          Get The App!
+        </button>
       </div>
-    );
-  }
+    </header>
+  );
+}
   
