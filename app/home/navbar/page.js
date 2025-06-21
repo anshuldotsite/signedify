@@ -21,7 +21,7 @@ export default function Navbar() {
         <h1 className="font-bold transition transform duration-300 hover:scale-105">Signedify</h1>
       </Link>
 
-      <nav className="md:flex">
+      <nav className="hidden md:flex">
         <ul className="flex space-x-4">
           {navLinks.map((link) => (
             <li key={link.href} className="hover:scale-110">
@@ -31,7 +31,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <div className="md:block">
+      <div className="hidden md:block">
         <button className="rounded bg-white px-4 py-2 text-blue-500">
           Get The App!
         </button>
