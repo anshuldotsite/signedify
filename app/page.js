@@ -6,7 +6,7 @@ import About from './about/page';
 
 export default function Home() {
   return (
-    <main className="pt-24">
+    <main className="pt-16">
       <Navbar />
       <Hero />
       <About />

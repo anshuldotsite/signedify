@@ -15,7 +15,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex w-full items-center justify-between bg-white p-4 text-xl text-blue-500 shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-40 flex w-full items-center justify-between bg-white p-1.5 text-xl text-blue-500 shadow-md">
       <Link href="/" className="flex items-center space-x-2">
         <Image src={Logo} alt="Signedify Logo" width={75} height={75} />
         <h1 className="font-bold transition transform duration-300 hover:scale-105">Signedify</h1>
