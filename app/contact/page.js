@@ -63,6 +63,11 @@ export default function Contact() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-sm leading-6 font-semibold text-blue-500"
+                  ) : key === 'phone' ? (
+                    <a
+                      key={key}
+                      href={`tel:${value.replace(/\D/g, '')}`}
+                      className="block text-sm leading-6 font-semibold text-blue-500"
                     >
                       {value}
                     </a>
