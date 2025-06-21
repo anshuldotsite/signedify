@@ -22,7 +22,7 @@ export default function Navbar() {
       </Link>
 
       <nav className="hidden md:flex">
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-10 pr-[2.5rem]">
           {navLinks.map((link) => (
             <li key={link.href} className="hover:scale-110">
               <Link href={link.href}>{link.label}</Link>
@@ -30,12 +30,6 @@ export default function Navbar() {
           ))}
         </ul>
       </nav>
-
-      <div className="hidden md:block">
-        <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
-          Try It Here!
-        </button>
-      </div>
 
       {/* Mobile menu button */}
       <button
@@ -83,11 +77,6 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              <li className="flex justify-center items-center">
-                <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
-                  Try It Here!
-                </button>
-              </li>
             </ul>
           </nav>
         </div>
