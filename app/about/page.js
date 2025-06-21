@@ -5,14 +5,7 @@ export default function About() {
         {/* Main Content */}
         <main className="flex-1 flex flex-col md:flex-row items-center justify-center px-8 py-12">
           {/* Text Section */}
-          <div className="flex-1 flex flex-col items-center md:items-start text-center ml-[6rem] pb-[8rem] md:text-left">
-            <h1 className="text-5xl font-semibold text-white leading-tight mb-6">
-              About<br />Signedify
-            </h1>
-            <p className="text-gray-300 max-w-xl text-lg">
-              Signedify seeks to bridge the gap between those who can only communicate through sign language and others who may struggle to understand it. Featuring real-time translation from video to any desired language, powered using AI and ML technology
-            </p>
-          </div>
+        
           
           {/* Phone Mockup */}
           <div className="flex-1 flex justify-center mt-12 md:mt-0">
@@ -58,6 +51,15 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="flex-1 flex flex-col items-center md:items-start text-center pb-[6rem] md:text-left">
+            <h1 className="text-5xl font-semibold text-white leading-tight mb-6">
+              Our Goal
+            </h1>
+            <p className="text-gray-300 max-w-xl text-lg">
+                Signedify is dedicated to bridging the communication divide between individuals who rely on sign language and those who may find it challenging to understand. Our mission is to alleviate the struggles faced by those who are unable to express themselves, building a more inclusive environment where everyone can share their thoughts and emotions freely. With Signedify, we aim to foster connections that transcend any disabilities impeding their paths.
+            </p>
           </div>
         </main>
       </div>
