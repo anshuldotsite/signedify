@@ -1,7 +1,8 @@
 "use client";
 
 import Link from 'next/link';
-// No Demo import needed - it's a separate page
+import Image from "next/image";
+import HeroImg from "@/assets/heroImg.jpg"; // Adjust the path as necessary
 
 export default function Hero() {
     return (
@@ -33,6 +34,9 @@ export default function Hero() {
                         Learn More
                     </button>
                 </div>
+            </div>
+            <div>
+                <Image src={HeroImg} alt="Hero Image" className="w-full max-w-md rounded-lg shadow-lg" />
             </div>
         </section>
     );
