@@ -30,7 +30,7 @@ export default function Contact() {
           Get in touch
         </h1>
         <p className="mt-6 text-xl font-semibold leading-8 text-blue-500">
-          We're happy to connect—reach out through any of the methods below!
+          We&apos;re happy to connect—reach out through any of the methods below!
         </p>
       </div>
 
