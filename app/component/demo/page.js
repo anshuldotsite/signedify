@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import Image from 'next/image';
 
 function ASLDisplay() {
   const [translation, setTranslation] = useState('');
@@ -52,7 +53,7 @@ function ASLDisplay() {
       <div style={{ textAlign: 'center' }}>
         <h3>Heatmap Feed</h3>
         {heatmapUrl ? (
-          <img
+          <Image
             src={heatmapUrl}
             alt="Heatmap Feed"
             style={{ width: '320px', height: '240px', border: '1px solid #ccc' }}
@@ -66,7 +67,7 @@ function ASLDisplay() {
       <div style={{ textAlign: 'center' }}>
         <h3>ASL Translation</h3>
         {finalFrameUrl ? (
-          <img
+          <Image
             src={finalFrameUrl}
             alt="Final Frame"
             style={{ width: '320px', height: '240px', border: '1px solid #ccc' }}
