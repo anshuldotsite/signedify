@@ -30,13 +30,13 @@ function ASLDisplay() {
   }, []);
 
   // Cleanup audio on unmount
-  useEffect(() => {
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause()
-      }
-    }
-  }, [])
+  // useEffect(() => {
+  //   return () => {
+  //     if (audioRef.current) {
+  //       audioRef.current.pause()
+  //     }
+  //   }
+  // }, [])
 
   return (
     <div
