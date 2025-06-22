@@ -1,0 +1,9 @@
+path: ./yolo_ready_dataset
+train: images/train
+val: images/val
+
+nc: 2
+
+names:
+  - class_0_name
+  - class_1_name
