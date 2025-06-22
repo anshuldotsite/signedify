@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Link from 'next/link';
-// import HeroStatsCard from "../heroCard/page";
+// No Demo import needed - it's a separate page
 
 export default function Hero() {
     return (
@@ -22,22 +21,19 @@ export default function Hero() {
                     Signedify uses AI to translate American Sign Language into real-time text, making conversations more accessible and inclusive for everyone.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
-                    <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
-                        Try It Here!
-                    </button>
+                    <Link href="/component/demo">
+                        <button className="transform rounded-full bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
+                            Try It Here!
+                        </button>
+                    </Link>
                     <button
-                    className="rounded-full border-2 border-gray-300 px-8 py-4 text-lg font-semibold text-gray-700 transition-all duration-300 hover:border-blue-500 hover:text-blue-500"
-                    onClick={() => window.open('https://github.com/anshuldotsite/signedify', '_blank', 'noopener,noreferrer')}
+                        className="rounded-full border-2 border-gray-300 px-8 py-4 text-lg font-semibold text-gray-700 transition-all duration-300 hover:border-blue-500 hover:text-blue-500"
+                        onClick={() => window.open('https://github.com/anshuldotsite/signedify', '_blank', 'noopener,noreferrer')}
                     >
                         Learn More
                     </button>
-
                 </div>
             </div>
-
-            {/* <div>
-                <HeroStatsCard />
-            </div> */}
         </section>
     );
 }
