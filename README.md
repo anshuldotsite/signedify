@@ -10,5 +10,3 @@ How to Use:
 1. Go to [Insert Link Here]
 2. Click "Try Me" Button.
 3. Enjoy the App :)
-
-![Uploading image.png…]()
