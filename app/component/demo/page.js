@@ -56,6 +56,11 @@ function ASLDisplay() {
           <Image
             src={heatmapUrl}
             alt="Heatmap Feed"
+            width={320}
+            height={240}
+            unoptimized
+            // Use unoptimized to avoid Next.js image optimization issues with dynamic URLs
+            // Remove this if you have a static URL or use a different method for images
             style={{ width: '320px', height: '240px', border: '1px solid #ccc' }}
           />
         ) : (
@@ -70,6 +75,9 @@ function ASLDisplay() {
           <Image
             src={finalFrameUrl}
             alt="Final Frame"
+            width={320}
+            height={240}
+            unoptimized
             style={{ width: '320px', height: '240px', border: '1px solid #ccc' }}
           />
         ) : (
