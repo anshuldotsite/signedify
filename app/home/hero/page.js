@@ -1,29 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import HeroImg from "@/assets/heroImg.png";
+import Link from 'next/link';
+// import HeroStatsCard from "../heroCard/page";
 
 export default function Hero() {
-    const [rotate, setRotate] = useState({ x: 0, y: 0 });
-
-    const handleMouseMove = (e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const { clientX, clientY } = e;
-        const { left, top, width, height } = rect;
-        const centerX = left + width / 2;
-        const centerY = top + height / 2;
-
-        const rotateX = ((clientY - centerY) / (height / 2)) * -15;
-        const rotateY = ((clientX - centerX) / (width / 2)) * 15;
-
-        setRotate({ x: rotateX, y: rotateY });
-    };
-
-    const handleMouseLeave = () => {
-        setRotate({ x: 0, y: 0 });
-    };
-
     return (
         <section
             id="home"
@@ -54,25 +35,9 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-                className="cursor-pointer"
-                style={{
-                    transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
-                    transformStyle: "preserve-3d",
-                }}
-            >
-                <Image 
-                    src={HeroImg} 
-                    alt="Hero Image" 
-                    width={300} 
-                    height={300}
-                    style={{
-                        filter: "drop-shadow(0 25px 50px rgba(0, 0, 0, 0.15))",
-                    }}
-                />
-            </div>
+            {/* <div>
+                <HeroStatsCard />
+            </div> */}
         </section>
     );
 }
